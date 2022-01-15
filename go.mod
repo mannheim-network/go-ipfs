@@ -66,32 +66,32 @@ require (
 	github.com/jbenet/go-temp-err-catcher v0.1.0
 	github.com/jbenet/goprocess v0.1.4
 	github.com/libp2p/go-doh-resolver v0.3.1
-	github.com/libp2p/go-libp2p v0.16.1-0.20211214061227-980033efd181
-	github.com/libp2p/go-libp2p-connmgr v0.3.0
-	github.com/libp2p/go-libp2p-core v0.13.0
+	github.com/libp2p/go-libp2p v0.17.1-0.20220115114156-5f2d064604c1
+	github.com/libp2p/go-libp2p-connmgr v0.3.2-0.20220115145817-a7820a5879c7
+	github.com/libp2p/go-libp2p-core v0.13.1-0.20220114101623-6b8d8bf59647
 	github.com/libp2p/go-libp2p-discovery v0.6.0
 	github.com/libp2p/go-libp2p-http v0.2.1
 	github.com/libp2p/go-libp2p-kad-dht v0.15.0
 	github.com/libp2p/go-libp2p-kbucket v0.4.7
 	github.com/libp2p/go-libp2p-loggables v0.1.0
-	github.com/libp2p/go-libp2p-mplex v0.4.1
+	github.com/libp2p/go-libp2p-mplex v0.4.2-0.20220113124821-8bd3fd12e637
 	github.com/libp2p/go-libp2p-noise v0.3.0
 	github.com/libp2p/go-libp2p-peerstore v0.6.0
 	github.com/libp2p/go-libp2p-pubsub v0.6.0
 	github.com/libp2p/go-libp2p-pubsub-router v0.5.0
-	github.com/libp2p/go-libp2p-quic-transport v0.15.2
+	github.com/libp2p/go-libp2p-quic-transport v0.15.1-0.20220115163217-d8ebfeffe1f5
 	github.com/libp2p/go-libp2p-record v0.1.3
 	github.com/libp2p/go-libp2p-routing-helpers v0.2.3
-	github.com/libp2p/go-libp2p-swarm v0.9.0
-	github.com/libp2p/go-libp2p-testing v0.6.0
+	github.com/libp2p/go-libp2p-swarm v0.9.1-0.20220114122938-ef54b2f2246b
+	github.com/libp2p/go-libp2p-testing v0.6.1-0.20220114111157-d4fb83f89618
 	github.com/libp2p/go-libp2p-tls v0.3.1
-	github.com/libp2p/go-libp2p-yamux v0.7.0
+	github.com/libp2p/go-libp2p-yamux v0.7.1-0.20220113124110-6ee26a611de0
 	github.com/libp2p/go-socket-activation v0.1.0
-	github.com/libp2p/go-tcp-transport v0.4.0
-	github.com/libp2p/go-ws-transport v0.5.0
+	github.com/libp2p/go-tcp-transport v0.4.1-0.20220114115510-e760df1f0b84
+	github.com/libp2p/go-ws-transport v0.5.1-0.20220104130611-c4b67dc94623
 	github.com/miekg/dns v1.1.43
 	github.com/mitchellh/go-homedir v1.1.0
-	github.com/multiformats/go-multiaddr v0.4.1
+	github.com/multiformats/go-multiaddr v0.5.0
 	github.com/multiformats/go-multiaddr-dns v0.3.1
 	github.com/multiformats/go-multibase v0.0.3
 	github.com/multiformats/go-multicodec v0.3.0
