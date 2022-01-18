@@ -12,6 +12,7 @@ import (
 	"sort"
 	"sync"
 
+	"github.com/mannheim-network/go-ipfs-encryptor/spacex"
 	multierror "github.com/hashicorp/go-multierror"
 
 	version "github.com/ipfs/go-ipfs"
@@ -441,6 +442,19 @@ func daemonFunc(req *cmds.Request, re cmds.ResponseEmitter, env cmds.Environment
 
 	// start MFS pinning thread
 	startPinMFS(daemonConfigPollInterval, cctx, &ipfsPinMFSNode{node})
+
+	// Set spacex
+	cfg, err := repo.Config()
+	if err != nil {
+		return err
+	}
+
+	if cc, ok := cfg.Datastore.Spec["spacex"]; ok {
+		if len(cc.(string)) != 0 {
+			spacex.Worker.SetUrl(cc.(string))
+			fmt.Printf("Spacex sworker url: %s\n", cc.(string))
+		}
+	}
 
 	// The daemon is *finally* ready.
 	fmt.Printf("Daemon is ready\n")
