@@ -452,7 +452,7 @@ func daemonFunc(req *cmds.Request, re cmds.ResponseEmitter, env cmds.Environment
 	if cc, ok := cfg.Datastore.Spec["spacex"]; ok {
 		if len(cc.(string)) != 0 {
 			spacex.Worker.SetUrl(cc.(string))
-			fmt.Printf("Spacex sworker url: %s\n", cc.(string))
+			fmt.Printf("Spacex storage url: %s\n", cc.(string))
 		}
 	}
 

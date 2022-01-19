@@ -112,6 +112,15 @@ require (
 	golang.org/x/sys v0.0.0-20210124154548-22da62e12c0c
 )
 
+replace github.com/ipfs/go-bitswap => ./local/go-bitswap
+replace github.com/ipfs/go-merkledag => ./local/go-merkledag
+replace github.com/ipfs/go-ipfs-blockstore => ./local/go-ipfs-blockstore
+replace github.com/ipfs/go-blockservice => ./local/go-blockservice
+replace github.com/ipfs/go-ds-badger => ./local/go-ds-badger
+replace github.com/ipfs/go-ds-flatfs => ./local/go-ds-flatfs
+replace github.com/ipfs/go-ds-leveldb => ./local/go-ds-leveldb
+replace github.com/ipfs/go-ipfs-pinner => ./local/go-ipfs-pinner
+replace github.com/ipfs/go-ipfs-config => ./local/go-ipfs-config
 replace github.com/mannheim-network/go-ipfs-encryptor => ./local/go-ipfs-encryptor
 
 go 1.14
