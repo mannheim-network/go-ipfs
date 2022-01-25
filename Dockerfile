@@ -1,5 +1,5 @@
 # Note: when updating the go minor version here, also update the go-channel in snap/snapcraft.yml
-FROM golang:1.14.4-buster 
+FROM golang:1.14.4-buster
 LABEL maintainer="Steven Allen <steven@stebalien.com>"
 
 # Install deps
@@ -9,13 +9,12 @@ RUN apt-get update && apt-get install -y \
   fuse
 
 ENV SRC_DIR /go-ipfs
+COPY . $SRC_DIR
 
 # Download packages first so they can be cached.
 COPY go.mod go.sum $SRC_DIR/
 RUN cd $SRC_DIR \
   && go mod download
-
-COPY . $SRC_DIR
 
 # Preload an in-tree but disabled-by-default plugin by adding it to the IPFS_PLUGINS variable
 # e.g. docker build --build-arg IPFS_PLUGINS="foo bar baz"
